@@ -10472,7 +10472,7 @@ nav[aria-label="breadcrumb"] li:before {
         }
 
         #services {
-          height: auto; /* Remove fixed height */
+          height: auto;
           background-color: darkgrey;
           margin-bottom: 20px;
         }
@@ -10480,22 +10480,52 @@ nav[aria-label="breadcrumb"] li:before {
         .card-container {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
+          /* justify-content: space-between; */
         }
+
+        p{
+          margin: 1%;
+        }
+
         
-        .card {
-          flex-basis: calc(50% - 20px);
-          margin-bottom: 20px;
-          padding: 10px;
-          border: 1px solid #ccc;
-          word-wrap: break-word; /* Add word-wrap property */
+        @media (max-width: 767px) {
+          #services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .card {
+            width: 80%;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+          div.card{
+            height: 30%;
+            margin-top: 10px;
+          }
+
+          p{
+            margin: 5px;
+          }
+        
         }
         
         @media (min-width: 768px) {
           .card {
-            flex-basis: calc(25% - 20px);
+            flex-basis: calc(50% - 20px); /* Adjust the width of the cards */
+            margin-bottom: 20px;   
+            margin: 10px;   
           }
-        }        
+        }
+        
+      div.card-container{
+        /* margin: -10%; */
+        padding-bottom: 5%;
+        justify-content: center;
+      }
+        
+   
         
         #projects {
           height: 100vh;
@@ -10548,7 +10578,7 @@ nav[aria-label="breadcrumb"] li:before {
           text-align: center;
           background-color: rgb(178, 172, 136);
           color: white;
-          border-radius: 20%;
+          /* border-radius: 20%; */
           border: 1px solid grey;
        }
 
@@ -10627,7 +10657,7 @@ nav[aria-label="breadcrumb"] li:before {
           }
 
           .site-navigation img.sage_logo{
-            margin-left: %;
+            margin-left: 0%;
           }
 
           
@@ -10668,11 +10698,15 @@ nav[aria-label="breadcrumb"] li:before {
         }
 
         h6{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #00204a;
           color: white;
           text-align: center;
+          height: 2rem;
         }
 
-     
 
-   
+     
       
