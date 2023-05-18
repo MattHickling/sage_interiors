@@ -24,3 +24,10 @@ $(document).ready(function() {
       theme: 'minimal'
     });
   });
+
+
+  $(document).ready(function() {
+    $('.menu-item').on('click', function() {
+      $('.site-menu-toggle').trigger('click'); // Close the menu
+    });
+  });
